@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Document</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Koulen&family=Nunito:ital,wght@1,200;1,500&display=swap"
+            ssorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rrel="stylesheet">
+        <link rel="stylesheet" href="css/navbar.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+            integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+            croel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Koulen&family=Noto+Sans+JP:wght@100&display=swap"
+            rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Koulen&family=Roboto+Slab:wght@500&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="css/sidebar.css">
+    </head>
+</head>
+
+<body>
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+
+    <div class="wrapper">
+        <div class="sidebar">
+            <h2 style="font-size: 1.5rem;">Contents</h2>
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i>Home</a></li>
+                <li><a href="commands.html"><i class="fas fa-user"></i>Commands</a></li>
+                 <li><a href="constraints.html"><i class="fas fa-map-pin"></i>Constraints</a></li>
+                <li><a href="queries.html"><i class="fas fa-address-card"></i>SQL Queries</a></li>
+                <li><a href="tutorials_db&tb.html"><i class="fas fa-project-diagram"></i>joins</a></li>
+                <li><a href="plsql.html"><i class="fas fa-blog"></i>PL SQL</a></li>
+                <li><a href="https://www.youtube.com/@C4KNOWLEDGESEEKERS"><i class="fas fa-address-book"></i>Videos</a></li>
+                <!-- <li><a href="#"><i class="fas fa-map-pin"></i>Map</a></li> -->
+            </ul>
+            <div class="social_media">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="main_content">
+            <!-- <div class="header">Welcome!! Have a nice day.</div>   -->
+            <div class="info">
+                <div class="heading">
+                    <h1 class="head">
+                        SQL Constraints
+                    </h1>
+                </div>
+                <div>
+                    <h2>-> IS NULL </h2>
+                    <p>IS NULL will return only rows with a NULL value.</p>
+                    <h4>Output</h4>
+                    <img src="output_image/output12.png" alt="">
+                    <h2>-> IS NOT NULL </h2>
+                    <p>IS NOT NULL does the opposite — it will return only rows without a NULL value</p>
+                    <h4>Output</h4>
+                    <img src="output_image/output13.png" alt="">
+                    <h2>-> Select Distinct</h2>
+                    <p>SELECT DISTINCT only returns data that is distinct — in other words, if there are duplicate records, it
+                        will return only one copy of each. <br>
+                        The code below would return only rows with a unique name from the customers table.
+                    </p>
+                    <h4>Output</h4>
+                    <img src="output_image/output3.png" alt="">
+                    <h2>-> CHECK </h2>
+                    <p>The CHECK constraint is used to limit the value range that can be placed in a column.
+
+                        If you define a CHECK constraint on a column it will allow only certain values for this column.
+                        
+                        If you define a CHECK constraint on a table it can limit the values in certain columns based on values in other columns in the row.</p>
+                    <h4>Output</h4>
+                    <img src="output_image/check.png" alt="">
+                    <h2>-> PRIMARY KEY </h2>
+                    <p>The PRIMARY KEY constraint uniquely identifies each record in a table.
+
+                        Primary keys must contain UNIQUE values, and cannot contain NULL values.
+                        
+                        A table can have only ONE primary key; and in the table, this primary key can consist of single or multiple columns (fields).</p>
+                    <h4>Output</h4>
+                    <img src="output_image/pkey.png" alt="">
+                    <h2>-> FOREIGN KEY </h2>
+                    <p>The FOREIGN KEY constraint is used to prevent actions that would destroy links between tables.
+
+                        A FOREIGN KEY is a field (or collection of fields) in one table, that refers to the PRIMARY KEY in another table.
+                        
+                        The table with the foreign key is called the child table, and the table with the primary key is called the referenced or parent table.</p>
+                    <h4>Output</h4>
+                    <img src="output_image/fkey.png" alt="">
+                    <h2>-> DEFAULT </h2>
+                    <p>The DEFAULT constraint is used to set a default value for a column.
+
+                        The default value will be added to all new records, if no other value is specified.</p>
+                    <h4>Output</h4>
+                    <img src="output_image/default.png" alt="">
+                    <!-- <h2>->  </h2>
+                    <p></p>
+                    <h4>Output</h4>
+                    <img src="output_image/output30.png" alt="">
+                    <h2>->  </h2>
+                    <p></p>
+                    <h4>Output</h4>
+                    <img src="output_image/output30.png" alt=""> -->
+                </div>
+            </div>
+        </div>
+
+</body>
+
+</html>

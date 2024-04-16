@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Document</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Koulen&family=Nunito:ital,wght@1,200;1,500&display=swap"
+            ssorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rrel="stylesheet">
+        <link rel="stylesheet" href="css/navbar.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+            integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+            croel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Koulen&family=Noto+Sans+JP:wght@100&display=swap"
+            rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Koulen&family=Roboto+Slab:wght@500&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="css/sidebar.css">
+        <style>
+            h4{
+                font-size: 1.5rem;
+                color:black;
+            }
+        </style>
+    </head>
+</head>
+
+<body>
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+
+    <div class="wrapper">
+        <div class="sidebar">
+            <h2 style="font-size: 1.5rem;">Contents</h2>
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i>Home</a></li>
+                <li><a href="commands.html"><i class="fas fa-user"></i>Commands</a></li>
+                <li><a href="constraints.html"><i class="fas fa-map-pin"></i>Constraints</a></li>
+                <li><a href="queries.html"><i class="fas fa-address-card"></i>SQL Queries</a></li>
+                <li><a href="tutorials_db&tb.html"><i class="fas fa-project-diagram"></i>joins</a></li>
+                <li><a href="plsql.html"><i class="fas fa-blog"></i>PL SQL</a></li>
+                <li><a href="https://www.youtube.com/@C4KNOWLEDGESEEKERS"><i class="fas fa-address-book"></i>Videos</a>
+                </li>
+                <!-- <li><a href="#"><i class="fas fa-map-pin"></i>Map</a></li> -->
+            </ul>
+            <div class="social_media">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="main_content">
+            <!-- <div class="header">Welcome!! Have a nice day.</div>   -->
+            <div class="info">
+                <div class="heading">
+                    <h1 class="head">
+                        PL SQL </h1>
+                </div>
+                <div>
+
+                    <h2>-> PL/SQL Introduction </h2>
+                    <h3>PL/SQL is a block structured language that enables developers to combine the power of SQL with
+                        procedural statements.All the statements of a block are passed to oracle engine all at once
+                        which increases processing speed and decreases the traffic.
+
+                    </h3>
+                    <h2>Basics of PL/SQL
+                    </h2>
+                    <h3>•PL/SQL stands for Procedural Language extensions to the Structured Query Language (SQL).
+                        <br><br>
+                        PL/SQL is a combination of SQL along with the procedural features of programming languages.
+                        <br><br>
+                        Oracle uses a PL/SQL engine to processes the PL/SQL statements. <br><br>
+                        PL/SQL includes procedural language elements like conditions and loops. It allows declaration of
+                        constants and variables, procedures and functions, types and variable of those types and
+                        triggers.</h3>
+
+                    <h2>Disadvantages of SQL:
+
+                    </h2>
+                    <h3>
+                        SQL doesn’t provide the programmers with a technique of condition checking, looping and
+                        branching. <br> <br>
+                        SQL statements are passed to Oracle engine one at a time which increases traffic and decreases
+                        speed. <br> <br>
+                        SQL has no facility of error checking during manipulation of data. <br> <br>
+                    </h3>
+                    <h2>Features of PL/SQL:
+
+                    </h2>
+                    <h3>
+                        PL/SQL is basically a procedural language, which provides the functionality of decision making, iteration and many more features of procedural programming languages.
+                        PL/SQL can execute a number of queries in one block using single command.
+                        One can create a PL/SQL unit such as procedures, functions, packages, triggers, and types, which are stored in the database for reuse by applications.
+                        PL/SQL provides a feature to handle the exception which occurs in PL/SQL block known as exception handling block.
+                        Applications written in PL/SQL are portable to computer hardware or operating system where Oracle is operational.
+                        PL/SQL Offers extensive error checking. <br><br>
+                    </h3>
+                    <h2> Differences between SQL and PL/SQL:</h2>
+                    <img src="output_image/plsql.png" alt="">
+                    <h2>Structure of PL/SQL Block:
+
+                    </h2>
+                    <h3>PL/SQL extends SQL by adding constructs found in procedural languages, resulting in a structural language that is more powerful than SQL. The basic unit in PL/SQL is a block. All PL/SQL programs are made up of blocks, which can be nested within each other.</h3>
+                    <img src="output_image/block.png" alt="">
+                    <h3>Typically, each block performs a logical action in the program. A block has the following structure:</h3>
+                    <img src="output_image/pl1.png" alt="">
+                    <h3>Declare section starts with DECLARE keyword in which variables, constants, records as cursors can be declared which stores data temporarily. It basically consists definition of PL/SQL identifiers. This part of the code is optional. <br> <br>
+                        Execution section starts with BEGIN and ends with END keyword.This is a mandatory section and here the program logic is written to perform any task like loops and conditional statements. It supports all DML commands, DDL commands and SQL*PLUS built-in functions as well. <br> <br>
+                        Exception section starts with EXCEPTION keyword.This section is optional which contains statements that are executed when a run-time error occurs. Any exceptions can be handled in this section.</h3>
+
+                        <h2>Programs : </h2>
+                        <h4>1. Example to show how to declare variables in PL/SQL : </h3>
+                            <img src="output_image/p1.png" alt="">
+                            <h4>2. Displaying output</h4>
+                            <img src="output_image/p2.png" alt="">
+                            <h4>3. Sum of two Variables: </h4>
+                            <img src="output_image/p3.png" alt="">
+                            <h4>4. Reverse a number in PL/SQL</h4>
+                            <img src="output_image/p4.png" alt="">
+                            <h4>5. Factorial of a number in PL/SQL
+                            </h4>
+                            <img src="output_image/p5.png" alt="">
+                            <h4>6. Print Patterns in PL/SQL
+
+                            </h4>
+                            <img src="output_image/p6.png" alt="">
+                            <img src="output_image/o1.png" alt="">
+                            <h4>7. Decision Making in PL/SQL (if-then , if-then-else, Nested if-then, if-then-elsif-then-else )
+                            </h4>
+                            <img src="output_image/p7.png" alt="">
+                            <!-- <h4>8. </h4> -->
+                            <img src="output_image/p8.png" alt="">
+                            <!-- <h4></h4> -->
+                            <img src="output_image/p9.png" alt="">
+                            <h4>Print different star patterns in SQL
+                            </h4>
+                            <img src="output_image/p10.png" alt="">
+                            <!-- <h4></h4> -->
+                            <img src="output_image/p11.png" alt="">
+                            <h4>GCD of two numbers in PL/SQL
+                            </h4>
+                            <img src="output_image/p12.png" alt="">
+                            <h4>Convert distance from km to meters and centimeters in PL/SQL
+                            </h4>
+                            <img src="output_image/p13.png" alt="">
+                            <img src="output_image/o2.png" alt="">
+                            <h4>Sum of digits of a number in PL/ SQL
+                            </h4>
+                            <img src="output_image/P14.png" alt="">
+                            <h4>Sum and average of three numbers in PL/SQL
+                            </h4>
+                            <img src="output_image/P15.png" alt="">
+                            <img src="output_image/O3.png" alt="">
+
+                            <h4>Check whether a string is palindrome or not in PL/SQL
+                            </h4>
+                            <img src="output_image/P16.png" alt="">
+                            <h4>Count odd and even digits in a number in PL/SQL
+                            </h4>
+                            <img src="output_image/P17.png" alt="">
+                            <img src="output_image/O4.png" alt="">
+                            <h4>Area and Perimeter of a circle in PL/SQL
+                            </h4>
+                            <img src="output_image/P18.png" alt="">
+                            <h4>Greatest number among three given numbers in PL/SQL
+                            </h4>
+                            <img src="output_image/p19.png" alt="">
+                            <h4>Concatenation of strings in PL/SQL
+                            </h4>
+                            <img src="output_image/p20.png" alt="">
+
+                            
+
+
+                </div>
+
+            </div>
+        </div>
+
+</body>
+
+</html>

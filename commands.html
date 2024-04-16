@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <title>Document</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Koulen&family=Nunito:ital,wght@1,200;1,500&display=swap"
+            ssorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rrel="stylesheet">
+        <link rel="stylesheet" href="css/navbar.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+            integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+            croel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Koulen&family=Noto+Sans+JP:wght@100&display=swap"
+            rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Koulen&family=Roboto+Slab:wght@500&display=swap"
+            rel="stylesheet">
+            <link rel="stylesheet" href="css/sidebar.css">
+    </head>
+<body>
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+
+<div class="wrapper">
+    <div class="sidebar">
+        <h2 style="font-size: 1.5rem;">Contents</h2>
+        <ul>
+            <li><a href="index.html"><i class="fas fa-home"></i>Home</a></li>
+            <li><a href="commands.html"><i class="fas fa-user"></i>Commands</a></li>
+             <li><a href="constraints.html"><i class="fas fa-map-pin"></i>Constraints</a></li>
+            <li><a href="queries.html"><i class="fas fa-address-card"></i>SQL Queries</a></li>
+            <li><a href="tutorials_db&tb.html"><i class="fas fa-project-diagram"></i>joins</a></li>
+            <li><a href="plsql.html"><i class="fas fa-blog"></i>PL SQL</a></li>
+            <li><a href="https://www.youtube.com/@C4KNOWLEDGESEEKERS"><i class="fas fa-address-book"></i>Videos</a></li>
+            <!-- <li><a href="#"><i class="fas fa-map-pin"></i>Map</a></li> -->
+        </ul> 
+        <div class="social_media">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+    <div class="main_content">
+        <!-- <div class="header">Welcome!! Have a nice day.</div>   -->
+        <div class="info">
+            <div class="heading">
+                <h1 class="head">
+                    SQL commands
+                </h1>
+    
+            </div>
+            <div>
+                <h2>-> Select</h2>
+                <p>SELECT is probably the most commonly-used SQL statement. You'll use it pretty much every time you query
+                    data with SQL. It allows you to define what data you want your query to return. <br>
+    
+                    For example, in the code below, we’re selecting a column called name from a table called customers.</p>
+                <h4>Output</h4>
+                <img src="output_image/output1.png" alt="">
+    
+                <h2>-> SELECT *</h2>
+                <p>SELECT used with an asterisk (*) will return all of the columns in the table we're querying.</p>
+                <h4>Output</h4>
+                <img src="output_image/output2.png" alt="">
+                
+                <h2>-> As </h2>
+                <p>AS renames a column or table with an alias that we can choose. For example, in the code below <br> we’re
+                    renaming the name column as first_name:</p>
+                <h4>Output</h4>
+                <img src="output_image/output4.png" alt="">
+                <h2>-> From </h2>
+                <p>FROM specifies the table we're pulling our data from:</p>
+                <h4>Output</h4>
+                <img src="output_image/output6.png" alt="">
+                <h2>-> Where cluase </h2>
+                <p>WHERE filters your query to only return results that match a set condition. We can use this together with
+                    conditional operators like =, >, <,>=, <=, etc.</p>
+                            <h4>Output</h4>
+                            <img src="output_image/output6.png" alt="">
+                            <h2>-> AND </h2>
+                            <p>AND combines two or more conditions in a single query. All of the conditions must be met for
+                                the result to be returned.</p>
+                            <h4>Output</h4>
+                            <img src="output_image/output7.png" alt="">
+                            <h2>-> OR </h2>
+                            <p>OR combines two or more conditions in a single query. Only one of the conditions must be met
+                                for a result to be returned.</p>
+                            <h4>Output</h4>
+                            <img src="output_image/output8.png" alt="">
+                            <h2>-> BETWEEN </h2>
+                            <p>BETWEEN filters your query to return only results that fit a specified range.
+    
+                            </p>
+                            <h4>Output</h4>
+                            <img src="output_image/output9.png" alt="">
+                            <h2>-> LIKE Operator </h2>
+                            <p>LIKE searches for a specified pattern in a column. In the example code below, any row with a
+                                name that included the characters Bob would be returned. <br>
+                                Other operators for LIKE: <br>
+    
+                                -> %x — will select all values that begin with x <br>
+                                -> %x% — will select all values that include x <br>
+                                -> x% — will select all values that end with x <br>
+                                -> x%y — will select all values that begin with x and end with y <br>
+                                -> _x% — will select all values have x as the second character <br>
+                                -> x_% — will select all values that begin with x and are at least two characters long. You
+                                can add additional _ characters to extend the length requirement, i.e. x___% <br>
+    
+                            </p>
+                            <h4>Output</h4>
+                            <img src="output_image/output10.png" alt="">
+                            <h2>-> IN </h2>
+                            <p>
+                                IN allows us to specify multiple values we want to select for when using the WHERE command.
+                            </p>
+                            <h4>Output</h4>
+                            <img src="output_image/output11.png" alt="">
+                           
+                            <h2>-> Create </h2>
+                            <p>CREATE can be used to set up a database, table, index or view.</p>
+                            <h2>-> Create Database</h2>
+                            <p>CREATE DATABASE creates a new database, assuming the user running the command has the correct
+                                admin rights.
+    
+                            </p>
+                            <h4>Output</h4>
+                            <img src="output_image/output14.png" alt="">
+                            <h2>-> CREATE TABLE </h2>
+                            <p>CREATE TABLE creates a new table inside a database. The terms int and varchar(255) in this
+                                example specify the datatypes of the columns we're creating.</p>
+                            <h4>Output</h4>
+                            <img src="output_image/output15.png" alt="">
+                            <h2>-> DROP </h2>
+                            <p>DROP statements can be used to delete entire databases, tables or indexes.
+    
+                                It goes without saying that the DROP command should only be used where absolutely necessary.
+                            </p>
+                            <h2>-> Drop Database</h2>
+                            <p>DROP DATABASE deletes the entire database including all of its tables, indexes etc as well as
+                                all the data within it.
+    
+                                Again, this is a command we want to be very, very careful about using!</p>
+                            <h4>Output</h4>
+                            <img src="output_image/output16.png" alt="">
+                            <h2>-> DROP TABLE </h2>
+                            <p>DROP TABLE deletes a table as well as the data within it.</p>
+                            <h4>Output</h4>
+                            <img src="output_image/output17.png" alt="">
+                            <h2>-> UPDATE </h2>
+                            <p>The UPDATE statement is used to update data in a table. For example, the code below would
+                                update the age of any customer named Bob in the customers table to 56.</p>
+                            <h4>Output</h4>
+                            <img src="output_image/output18.png" alt="">
+                            <h2>-> DELETE </h2>
+                            <p>DELETE can remove all rows from a table (using ), or can be used as part of a WHERE clause to
+                                delete rows that meet a specific condition.</p>
+                            <h4>Output</h4>
+                            <img src="output_image/output19.png" alt="">
+                            <h2>-> ALTER TABLE </h2>
+                            <p>ALTER TABLE allows you to add or remove columns from a table. In the code snippets below,
+                                we’ll add and then remove a column for surname. The text varchar(255) specifies the datatype
+                                of the column.</p>
+                            <h4>Output</h4>
+                            <img src="output_image/output20.png" alt="">
+                            <img src="output_image/output20_2.png" alt="">
+    
+    
+                            
+                            <h2>-> AGGREGATE FUNCTIONS (COUNT/SUM/AVG/MIN/MAX) </h2>
+                            <p>An aggregate function performs a calculation on a set of values and returns a single result.
+                            </p>
+                            <h2>-> count</h2>
+                            <p>COUNT returns the number of rows that match the specified criteria. In the code below, we’re using *, so the total row count for customers would be returned.</p>
+                            <h4>Output</h4>
+                            <img src="output_image/output21.png" alt="">
+                            <h2>-> SUM</h2>
+                            <p>SUM returns the total sum of a numeric column.</p>
+                            <h4>Output</h4>
+                            <img src="output_image/output22.png" alt="">
+                            <h2>-> AVERAGE(AVG) </h2>
+                            <p>AVG returns the average value of a numeric column.</p>
+                            <h4>Output</h4>
+                            <img src="output_image/output23.png" alt="">
+                            <h2>-> MINIMUM(MIN)</h2>
+                            <p>MIN returns the minimum value of a numeric column.</p>
+                            <h4>Output</h4>
+                            <img src="output_image/output24.png" alt="">
+                            <h2>-> MAXIMUM(MAX) </h2>
+                            <p>MAX returns the maximum value of a numeric column.</p>
+                            <h4>Output</h4>
+                            <img src="output_image/output25.png" alt="">
+                            <h2>-> GROUP BY CLAUSE </h2>
+                            <p>The GROUP BY statement groups rows with the same values into summary rows. The statement is often used with aggregate functions. For example, the code below will display the average age for each name that appears in our customers table.</p>
+                            <h4>Output</h4>
+                            <img src="output_image/output26.png" alt="">
+                            <h2>-> HAVING</h2>
+                            <p>HAVING performs the same action as the WHERE clause. The difference is that HAVING is used for aggregate functions, whereas WHERE doesn’t work with them.
+    
+                                The below example would return the number of rows for each name, but only for names with more than 2 records.</p>
+                            <h4>Output</h4>
+                            <img src="output_image/output27.png" alt="">
+                            <h2>->ORDER BY</h2>
+                            <p>ORDER BY sets the order of the returned results. The order will be ascending by default.
+    
+                            </p>
+                            <h4>Output</h4>
+                            <img src="output_image/output28.png" alt="">
+                            <h2>-> Descending</h2>
+                            <p>DESC will return the results in descending order.</p>
+                            <h4>Output</h4>
+                            <img src="output_image/output29.png" alt="">
+                            <!-- <h2>->  </h2>
+                    <p></p>
+                    <h4>Output</h4>
+                    <img src="output_image/output30.png" alt="">
+                    <h2>->  </h2>
+                    <p></p>
+                    <h4>Output</h4>
+                    <img src="output_image/output.png" alt="">
+                    <h2>->  </h2>
+                    <p></p>
+                    <h4>Output</h4>
+                    <img src="output_image/output5.png" alt="">
+                    <h2>->  </h2>
+                    <p></p>
+                    <h4>Output</h4>
+                    <img src="output_image/output5.png" alt="">
+                    <h2>->  </h2>
+                    <p></p>
+                    <h4>Output</h4>
+                    <img src="output_image/output5.png" alt="">
+                    <h2>->  </h2>
+                    <p></p>
+                    <h4>Output</h4>
+                    <img src="output_image/output5.png" alt="">
+                    <h2>->  </h2>
+                    <p></p>
+                    <h4>Output</h4>
+                    <img src="output_image/output5.png" alt="">
+                    <h2>->  </h2>
+                    <p></p>
+                    <h4>Output</h4>
+                    <img src="output_image/output5.png" alt="">
+                    <h2>->  </h2>
+                    <p></p>
+                    <h4>Output</h4>
+                    <img src="output_image/output5.png" alt="">
+                    <h2>->  </h2>
+                    <p></p>
+                    <h4>Output</h4>
+                    <img src="output_image/output5.png" alt=""> -->
+    
+    
+    
+    
+    
+    
+            </div>
+
+ </div>
+
+         
+    </div>
+</div>
+</body>
+</html>
